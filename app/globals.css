@@ -1,0 +1,30 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial; color: #0f172a; background: #f8fafc; }
+
+.container { max-width: 1000px; margin: 0 auto; padding: 24px; }
+.header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+.branding { display: flex; gap: 12px; align-items: center; }
+.logo { font-size: 28px; }
+.sub { color: #475569; }
+
+.main { display: flex; flex-direction: column; gap: 16px; }
+.card { background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 16px; box-shadow: 0 1px 2px rgba(0,0,0,0.04); }
+.label { display: block; font-weight: 600; margin-bottom: 8px; }
+.textarea { width: 100%; border: 1px solid #cbd5e1; border-radius: 8px; padding: 12px; resize: vertical; font-size: 14px; }
+.btn { background: #0ea5e9; color: white; border: none; padding: 10px 14px; border-radius: 8px; cursor: pointer; font-weight: 600; }
+.btn:disabled { opacity: .6; cursor: not-allowed; }
+.btn-secondary { background: white; color: #0f172a; border: 1px solid #cbd5e1; padding: 10px 14px; border-radius: 8px; cursor: pointer; font-weight: 600; }
+.error { color: #b91c1c; background: #fee2e2; border: 1px solid #fecaca; padding: 8px 12px; border-radius: 8px; }
+
+.results .grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+@media (min-width: 900px) { .results .grid { grid-template-columns: 1fr 1fr; } }
+.code { max-height: 420px; overflow: auto; background: #0b1020; color: #d1e9ff; padding: 12px; border-radius: 8px; font-size: 13px; }
+.actions { display: flex; gap: 8px; margin-top: 12px; }
+
+.steps { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
+.step { display: flex; gap: 12px; align-items: flex-start; }
+.badge { width: 28px; height: 28px; display: inline-flex; align-items: center; justify-content: center; background: #e2e8f0; border-radius: 999px; font-weight: 700; }
+.step-title { font-weight: 600; }
+.muted { color: #64748b; }
+.small { font-size: 12px; }
+.footer { display: flex; justify-content: center; padding: 24px 0; }
